@@ -99,7 +99,7 @@ jobs:
           path: build/WebGL
 
   deployPages:
-    needs: buildForSupportedPlatforms
+    needs: buildWebGL
     name: Deploy WebGL build to Github Pages 🚀
     runs-on: ubuntu-latest
     steps:
