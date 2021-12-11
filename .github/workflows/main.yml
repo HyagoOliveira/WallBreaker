@@ -1,11 +1,6 @@
 name: GameCI WallBreaker 🎮
 
-on: 
-  workflow_dispatch
-  # Trigger the workflow on pull request (only for the main branch)
-  pull_request:
-    branches:
-      - main
+on: workflow_dispatch
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
