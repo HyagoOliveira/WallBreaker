@@ -5,6 +5,8 @@ on:
   pull_request:
     branches:
       - main
+  # Allows to manually triggering
+  workflow_dispatch:
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
