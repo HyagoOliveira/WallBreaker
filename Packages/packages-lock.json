@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.actioncode.adapters": {
+      "version": "file:C:/Users/hyago/Documents/Game Development/Unity Projects/_Packages/ActionCode/Adapters",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.common": {
       "version": "5.0.0",
       "depth": 1,
