@@ -1,0 +1,16 @@
+{
+    "name": "WallBreaker",
+    "rootNamespace": "WallBreaker",
+    "references": [
+        "GUID:3eda8197c14d259438ec78ead219ef9f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
