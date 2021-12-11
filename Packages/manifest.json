@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.actioncode.adapters": "file:C:/Users/hyago/Documents/Game Development/Unity Projects/_Packages/ActionCode/Adapters",
+    "com.actioncode.nsubstitute": "2.0.3",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.spriteshape": "6.0.1",
     "com.unity.2d.tilemap": "1.0.0",
@@ -24,7 +25,7 @@
     "com.unity.modules.ui": "1.0.0",
     "com.unity.modules.uielements": "1.0.0"
   },
-    "scopedRegistries": [
+  "scopedRegistries": [
     {
       "name": "Action Code",
       "url": "http://3.137.202.26:4873/",
