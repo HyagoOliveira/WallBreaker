@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.actioncode.adapters": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "http://3.137.202.26:4873"
+    },
+    "com.actioncode.nsubstitute": {
+      "version": "2.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "http://3.137.202.26:4873"
+    },
     "com.unity.2d.common": {
       "version": "5.0.0",
       "depth": 1,
