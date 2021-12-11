@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.actioncode.adapters": "file:C:/Users/hyago/Documents/Game Development/Unity Projects/_Packages/ActionCode/Adapters",
+    "com.actioncode.adapters": "1.0.0",
     "com.actioncode.nsubstitute": "2.0.3",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.spriteshape": "6.0.1",
