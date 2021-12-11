@@ -14,7 +14,7 @@ jobs:
       matrix:
         testMode:
           - EditMode
-          - PlayMode
+        #  - PlayMode
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
