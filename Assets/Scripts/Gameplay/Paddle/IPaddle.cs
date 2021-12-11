@@ -18,6 +18,11 @@ namespace WallBreaker.Gameplay
         Vector3 Size { get; }
 
         /// <summary>
+        /// Initializes the Paddle.
+        /// </summary>
+        void Initialize();
+
+        /// <summary>
         /// Moves the Paddle horizontally using the given input.
         /// </summary>
         /// <param name="input">The input to move horizontally.</param>

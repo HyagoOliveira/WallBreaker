@@ -22,7 +22,7 @@ namespace WallBreaker.Gameplay
 
         private void OnValidate()
         {
-            if (Paddle != null) Paddle.Speed = speed;
+            if (Paddle != null) SyncSpeed();
         }
 
         public void OnMove(InputValue input)
@@ -36,10 +36,11 @@ namespace WallBreaker.Gameplay
             Paddle = new Paddle(
                 RigidbodyAdapterFactory.Create(gameObject),
                 ColliderAdapterFactory.Create(gameObject)
-            )
-            {
-                Speed = speed
-            };
+            );
+            Paddle.Initialize();
+            SyncSpeed();
         }
+
+        private void SyncSpeed() => Paddle.Speed = speed;
     }
 }

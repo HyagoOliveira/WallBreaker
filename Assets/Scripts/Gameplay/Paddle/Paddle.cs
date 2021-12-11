@@ -29,8 +29,11 @@ namespace WallBreaker.Gameplay
         {
             this.body = body;
             this.collider = collider;
+        }
 
-            this.body.IsKinematic = true;
+        public void Initialize()
+        {
+            body.IsKinematic = true;
         }
 
         public void MoveHorizontally(float input)
