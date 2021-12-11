@@ -1,9 +1,7 @@
 name: GameCI WallBreaker 🎮
 
 on: 
-  workflow_dispatch:
-    branches:
-      - main
+  workflow_dispatch
   # Trigger the workflow on pull request (only for the main branch)
   pull_request:
     branches:
