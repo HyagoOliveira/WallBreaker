@@ -55,6 +55,6 @@ namespace WallBreaker.Gameplay
         /// </summary>
         /// <param name="transform">The colliding Transform.</param>
         /// <param name="normal">The normal direction from where it hits.</param>
-        void EnterCollision(ITransform transform, Vector3 normal);
+        void EnterCollision(ITransform transform, Vector2 normal);
     }
 }

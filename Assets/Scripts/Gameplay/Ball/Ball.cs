@@ -5,10 +5,18 @@ namespace WallBreaker.Gameplay
 {
     public sealed class Ball : IBall
     {
+        /// <summary>
+        /// The maximum speed allowed. 
+        /// </summary>
+        public const float MAX_SPEED = 100F;
+
+        /// <summary>
+        /// The maximum random rotation allowed.
+        /// </summary>
+        public const float RANDOM_ROTATION = 30F;
+
         public event Action OnCollide;
         public event Action OnCollideWithPaddle;
-
-        public const float MAX_SPEED = 100F;
 
         public IRigidbody Body => body;
         public ITransform Transform => transform;
@@ -38,19 +46,18 @@ namespace WallBreaker.Gameplay
             this.body = body;
             this.random = random;
             this.transform = transform;
-            SetupBody();
         }
 
         public void Enable(float initialSpeed)
         {
-            var rotation = random.Range(-30.0f, 30.0f);
+            var rotation = random.Range(-RANDOM_ROTATION, RANDOM_ROTATION);
 
             Speed = initialSpeed;
             Direction = Quaternion.Euler(0.0f, 0.0f, rotation) * Vector2.down;
             Body.Velocity = Direction * Speed;
         }
 
-        public void EnterCollision(ITransform transform, Vector3 normal)
+        public void EnterCollision(ITransform transform, Vector2 normal)
         {
             HitCount++;
             OnCollide?.Invoke();
@@ -61,11 +68,6 @@ namespace WallBreaker.Gameplay
 
             Direction = Vector3.Reflect(Direction, normal);
             Body.Velocity = Direction * Speed;
-        }
-
-        private void SetupBody()
-        {
-            Body.IsKinematic = true;
         }
     }
 }
